@@ -6,7 +6,7 @@ h1 {
 }
 
 
-#ad {
+#one {
   width: 150px;
   height: 230px;
   margin-bottom: 20px;
@@ -20,8 +20,7 @@ h1 {
   height: 230px;
   margin-bottom: 20px;
   margin-top: 20px;
-  border: 1px solid #333;
-  background-image: linear-gradient(180deg, #fff, #ddd 40%, #ead);
+  border: 1px solid #fff;
 }
 
 #three {
@@ -29,8 +28,7 @@ h1 {
   height: 230px;
   margin-bottom: 20px;
   margin-top: 20px;
-  border: 1px solid #333;
-  background-image: linear-gradient(180deg, #fff, #ddd 40%, #ead);
+  border: 1px solid #fff;
 }
 
 #four {
@@ -38,8 +36,7 @@ h1 {
   height: 230px;
   margin-bottom: 20px;
   margin-top: 20px;
-  border: 1px solid #333;
-  background-image: linear-gradient(180deg, #fff, #ddd 40%, #ead);
+  border: 1px solid #fff;
 }
 
 #five {
@@ -47,8 +44,7 @@ h1 {
   height: 230px;
   margin-bottom: 20px;
   margin-top: 20px;
-  border: 1px solid #333;
-  background-image: linear-gradient(180deg, #fff, #ddd 40%, #ead);
+  border: 1px solid #fff;
 }
 
 #six {
@@ -56,8 +52,7 @@ h1 {
   height: 230px;
   margin-bottom: 20px;
   margin-top: 20px;
-  border: 1px solid #333;
-  background-image: linear-gradient(180deg, #fff, #ddd 40%, #ead);
+  border: 1px solid #fff;
 }
 
 #seven {
@@ -65,8 +60,7 @@ h1 {
   height: 230px;
   margin-bottom: 20px;
   margin-top: 20px;
-  border: 1px solid #333;
-  background-image: linear-gradient(180deg, #fff, #ddd 40%, #ead);
+  border: 1px solid #fff;
 }
 
 #eight {
@@ -74,8 +68,7 @@ h1 {
   height: 230px;
   margin-bottom: 20px;
   margin-top: 20px;
-  border: 1px solid #333;
-  background-image: linear-gradient(180deg, #fff, #ddd 40%, #ead);
+  border: 1px solid #fff;
 }
 
 #nine {
@@ -83,8 +76,7 @@ h1 {
   height: 230px;
   margin-bottom: 20px;
   margin-top: 20px;
-  border: 1px solid #333;
-  background-image: linear-gradient(180deg, #fff, #ddd 40%, #ead);
+  border: 1px solid #fff;
 }
 
 #ten {
@@ -92,8 +84,7 @@ h1 {
   height: 230px;
   margin-bottom: 20px;
   margin-top: 20px;
-  border: 1px solid #333;
-  background-image: linear-gradient(180deg, #fff, #ddd 40%, #ead);
+  border: 1px solid #fff;
 }
 
 #eleven {
@@ -101,8 +92,7 @@ h1 {
   height: 230px;
   margin-bottom: 20px;
   margin-top: 20px;
-  border: 1px solid #333;
-  background-image: linear-gradient(180deg, #fff, #ddd 40%, #ead);
+  border: 1px solid #fff;
 }
 
 #twelve {
@@ -110,8 +100,7 @@ h1 {
   height: 230px;
   margin-bottom: 20px;
   margin-top: 20px;
-  border: 1px solid #333;
-  background-image: linear-gradient(180deg, #fff, #ddd 40%, #ead);
+  border: 1px solid #fff;
 }
 
 #thirteen {
@@ -119,8 +108,7 @@ h1 {
   height: 230px;
   margin-bottom: 20px;
   margin-top: 20px;
-  border: 1px solid #333;
-  background-image: linear-gradient(180deg, #fff, #ddd 40%, #ead);
+  border: 1px solid #fff;
 }
 
 #fourteen {
@@ -128,8 +116,7 @@ h1 {
   height: 230px;
   margin-bottom: 20px;
   margin-top: 20px;
-  border: 1px solid #333;
-  background-image: linear-gradient(180deg, #fff, #ddd 40%, #ead);
+  border: 1px solid #fff;
 }
 
 #fifteen {
@@ -137,8 +124,7 @@ h1 {
   height: 230px;
   margin-bottom: 20px;
   margin-top: 20px;
-  border: 1px solid #333;
-  background-image: linear-gradient(180deg, #fff, #ddd 40%, #ead);
+  border: 1px solid #fff;
 }
 
 #sixteen {
@@ -146,8 +132,7 @@ h1 {
   height: 230px;
   margin-bottom: 20px;
   margin-top: 20px;
-  border: 1px solid #333;
-  background-image: linear-gradient(180deg, #fff, #ddd 40%, #ead);
+  border: 1px solid #fff;
 }
 
 .grid-container {

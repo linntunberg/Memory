@@ -8,4 +8,4 @@
 <img src="https://media.giphy.com/media/65NO1TrKrJUT6/giphy.gif">
 
 
-<strong>Tested by:</strong>
+<strong>Tested by: Oskar, </strong>

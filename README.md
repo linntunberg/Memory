@@ -9,4 +9,4 @@
 <img src="https://media.giphy.com/media/65NO1TrKrJUT6/giphy.gif">
 
 
-<strong>Tested by: </strong>Oskar,
+<strong>Tested by: </strong>Oskar, Johan

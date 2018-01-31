@@ -5,23 +5,22 @@ var secondchoice;
 var match = 0;
 var backcard = "back.jpeg";
 
-var image = [];
-image[0] = 'nicolas1.jpg';
-image[1] = 'nicolas2.jpg';
-image[2] = 'nicolas3.jpg';
-image[3] = 'nicolas4.jpg';
-image[4] = 'nicolas5.jpg';
-image[5] = 'nicolas6.jpg';
-image[6] = 'nicolas7.jpg';
-image[7] = 'nicolas8.jpg';
-image[8] = 'nicolas1.jpg';
-image[9] = 'nicolas2.jpg';
-image[10] = 'nicolas3.jpg';
-image[11] = 'nicolas4.jpg';
-image[12] = 'nicolas5.jpg';
-image[13] = 'nicolas6.jpg';
-image[14] = 'nicolas7.jpg';
-image[15] = 'nicolas8.jpg';
+var image = ['nicolas1.jpg', 'nicolas1.jpg', 'nicolas2.jpg', 'nicolas2.jpg', 'nicolas3.jpg', 'nicolas3.jpg', 'nicolas4.jpg', 'nicolas4.jpg', 'nicolas5.jpg', 'nicolas5.jpg', 'nicolas6.jpg', 'nicolas6.jpg', 'nicolas7.jpg', 'nicolas7.jpg', 'nicolas8.jpg', 'nicolas8.jpg'];
+
+function shuffle(image)
+{
+  var j, x, i;
+  for (i = a.length - 1; i > 0; i--) {
+    j = Math.floor(Math.random() * (i + 1));
+    x = a[i];
+    a[i] = a[j];
+    a[j] = x;
+  }
+}
+
+image = shuffle(image);
+
+
 
 
 function choose(card) {
@@ -42,7 +41,7 @@ function choose(card) {
 
 
 		function check() {
-				clearInterval(timer); 
+				clearInterval(timer);
 				clicks = 0;
 				if (image[secondchoice] == image[firstchoice]) {
 						match++;

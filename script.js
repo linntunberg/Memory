@@ -7,7 +7,8 @@ var backcard = "back.jpeg";
 
 var image = ['nicolas1.jpg', 'nicolas1.jpg', 'nicolas2.jpg', 'nicolas2.jpg', 'nicolas3.jpg', 'nicolas3.jpg', 'nicolas4.jpg', 'nicolas4.jpg', 'nicolas5.jpg', 'nicolas5.jpg', 'nicolas6.jpg', 'nicolas6.jpg', 'nicolas7.jpg', 'nicolas7.jpg', 'nicolas8.jpg', 'nicolas8.jpg'];
 
-function shuffle(image)
+
+function shuffle(a)
 {
   var j, x, i;
   for (i = a.length - 1; i > 0; i--) {
@@ -18,8 +19,7 @@ function shuffle(image)
   }
 }
 
-image = shuffle(image);
-
+image = shuffle(images);
 
 
 

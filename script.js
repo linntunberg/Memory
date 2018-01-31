@@ -7,7 +7,6 @@ var backcard = "back.jpeg";
 
 var image = ['nicolas1.jpg', 'nicolas1.jpg', 'nicolas2.jpg', 'nicolas2.jpg', 'nicolas3.jpg', 'nicolas3.jpg', 'nicolas4.jpg', 'nicolas4.jpg', 'nicolas5.jpg', 'nicolas5.jpg', 'nicolas6.jpg', 'nicolas6.jpg', 'nicolas7.jpg', 'nicolas7.jpg', 'nicolas8.jpg', 'nicolas8.jpg'];
 
-
 function shuffle(a)
 {
   var j, x, i;
@@ -17,10 +16,9 @@ function shuffle(a)
     a[i] = a[j];
     a[j] = x;
   }
+  return a;
 }
-
-image = shuffle(images);
-
+image = shuffle(image);
 
 
 function choose(card) {
@@ -38,6 +36,7 @@ function choose(card) {
 						timer = setInterval("check()", 1000);
 				}
 		}
+
 
 
 		function check() {

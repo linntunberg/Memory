@@ -57,3 +57,4 @@ function choose(card) {
       back.setAttribute('id', 'back');
       back.style.backgroundImage = image[index];  card.appendChild('back'); card.addEventListener('click', function(event) {
     document.getElementById('back').style.visibility='visible'; }); }
+    document.body.appendChild(card);

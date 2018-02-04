@@ -53,8 +53,13 @@ function check() {
 }
 
 
-image.foreach(function(image, index) {let card= document.createElement('div'); card.classList.add('front');  let back = document.createElement('div');
+image.foreach(function(image, index) {
+	let card= document.createElement('div'); 
+	card.classList.add('front');  
+	let back = document.createElement('div');
 back.setAttribute('id', 'back');
-back.style.backgroundImage = image[index];  card.appendChild('back'); card.addEventListener('click', function(event) {
+back.style.backgroundImage = image[index];  
+	card.appendChild('back'); 
+	card.addEventListener('click', function(event) {
   document.getElementById('back').style.visibility='visible'; }); }
   document.body.appendChild(card);

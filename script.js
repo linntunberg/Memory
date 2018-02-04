@@ -51,3 +51,9 @@ function choose(card) {
 						return;
 				}
 		}
+
+
+    image.foreach(function(image, index) {let card= document.createElement('div'); card.classList.add('front');  let back = document.createElement('div');
+      back.setAttribute('id', 'back');
+      back.style.backgroundImage = image[index];  card.appendChild('back'); card.addEventListener('click', function(event) {
+    document.getElementById('back').style.visibility='visible'; }); }

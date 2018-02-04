@@ -22,39 +22,39 @@ image = shuffle(image);
 
 
 function choose(card) {
-				if (clicks == 2) {
-						return;
-				}
-				if (clicks == 0) {
-						firstchoice = card;
-						document.images[card].src = image[card];
-						clicks = 1;
-				} else {
-						clicks = 2;
-						secondchoice = card;
-						document.images[card].src = image[card];
-						timer = setInterval("check()", 1000);
-				}
-		}
+  if (clicks == 2) {
+    return;
+  }
+  if (clicks == 0) {
+    firstchoice = card;
+    document.images[card].src = image[card];
+    clicks = 1;
+  } else {
+    clicks = 2;
+    secondchoice = card;
+    document.images[card].src = image[card];
+    timer = setInterval("check()", 1000);
+  }
+}
 
 
 
-		function check() {
-				clearInterval(timer);
-				clicks = 0;
-				if (image[secondchoice] == image[firstchoice]) {
-						match++;
+function check() {
+  clearInterval(timer);
+  clicks = 0;
+  if (image[secondchoice] == image[firstchoice]) {
+    match++;
 
-				} else {
-						document.images[firstchoice].src = backcard;
-						document.images[secondchoice].src = backcard;
-						return;
-				}
-		}
+  } else {
+    document.images[firstchoice].src = backcard;
+    document.images[secondchoice].src = backcard;
+    return;
+  }
+}
 
 
-    image.foreach(function(image, index) {let card= document.createElement('div'); card.classList.add('front');  let back = document.createElement('div');
-      back.setAttribute('id', 'back');
-      back.style.backgroundImage = image[index];  card.appendChild('back'); card.addEventListener('click', function(event) {
-    document.getElementById('back').style.visibility='visible'; }); }
-    document.body.appendChild(card);
+image.foreach(function(image, index) {let card= document.createElement('div'); card.classList.add('front');  let back = document.createElement('div');
+back.setAttribute('id', 'back');
+back.style.backgroundImage = image[index];  card.appendChild('back'); card.addEventListener('click', function(event) {
+  document.getElementById('back').style.visibility='visible'; }); }
+  document.body.appendChild(card);

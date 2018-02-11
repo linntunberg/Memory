@@ -57,14 +57,14 @@ document.getElementById("button").addEventListener("click", function() {
 });
 
 image.forEach(function(img) {
-	let card= document.createElement('div');
-	card.classList.add('card');
+	let card= document.createElement('div'); //creates element div
+	card.classList.add('card'); //adds a the class named "card" to the element "card", adding this to the first card
 
-	card.style.backgroundImage = `url('${img}')`;
+	card.style.backgroundImage = `url('${img}')`; //background of card is img
 
-	card.addEventListener('click', function(event)
+	card.addEventListener('click', function(event) //adds event listener when clicked, something happens
 	{
-		card.classList.add('show')
+		card.classList.add('show') //adds the class "show"
 	});
-	document.body.querySelector('.content').appendChild(card);
+	document.body.querySelector('.content').appendChild(card); //adds content to the body of the document
 });

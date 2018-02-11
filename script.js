@@ -9,57 +9,62 @@ var image = ['nicolas1.jpg', 'nicolas1.jpg', 'nicolas2.jpg', 'nicolas2.jpg', 'ni
 
 function shuffle(a)
 {
-  var j, x, i;
-  for (i = a.length - 1; i > 0; i--) {
-    j = Math.floor(Math.random() * (i + 1));
-    x = a[i];
-    a[i] = a[j];
-    a[j] = x;
-  }
-  return a;
+	var j, x, i;
+	for (i = a.length - 1; i > 0; i--) {
+		j = Math.floor(Math.random() * (i + 1));
+		x = a[i];
+		a[i] = a[j];
+		a[j] = x;
+	}
+	return a;
 }
 image = shuffle(image);
 
 
 function choose(card) {
-  if (clicks == 2) {
-    return;
-  }
-  if (clicks == 0) {
-    firstchoice = card;
-    document.images[card].src = image[card];
-    clicks = 1;
-  } else {
-    clicks = 2;
-    secondchoice = card;
-    document.images[card].src = image[card];
-    timer = setInterval("check()", 1000);
-  }
+	if (clicks == 2) {
+		return;
+	}
+	if (clicks == 0) {
+		firstchoice = card;
+		document.images[card].src = image[card];
+		clicks = 1;
+	} else {
+		clicks = 2;
+		secondchoice = card;
+		document.images[card].src = image[card];
+		timer = setInterval("check()", 1000);
+	}
 }
 
 
 
 function check() {
-  clearInterval(timer);
-  clicks = 0;
-  if (image[secondchoice] == image[firstchoice]) {
-    match++;
+	clearInterval(timer);
+	clicks = 0;
+	if (image[secondchoice] == image[firstchoice]) {
+		match++;
 
-  } else {
-    document.images[firstchoice].src = backcard;
-    document.images[secondchoice].src = backcard;
-    return;
-  }
+	} else {
+		document.images[firstchoice].src = backcard;
+		document.images[secondchoice].src = backcard;
+		return;
+	}
 }
 
+document.getElementById("button").addEventListener("click", function() {
+	location.reload();
+});
 
-image.foreach(function(image, index) {
-	let card= document.createElement('div'); 
-	card.classList.add('front');  
-	let back = document.createElement('div');
-back.setAttribute('id', 'back');
-back.style.backgroundImage = image[index];  
-	card.appendChild('back'); 
-	card.addEventListener('click', function(event) {
-  document.getElementById('back').style.visibility='visible'; }); }
-  document.body.appendChild(card);
+image.forEach(function(img) {
+	let card= document.createElement('div');
+	card.classList.add('card');
+
+	card.style.backgroundImage = `url('${img}')`;
+
+	card.addEventListener('click', function(event)
+	{
+		card.classList.add('show')
+	});
+	document.body.querySelector('.content').appendChild(card);
+});

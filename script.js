@@ -18,7 +18,7 @@ function shuffle(a)
 }
 image = shuffle(image);
 
-image.forEach(function(img) {
+image.forEach(function(img) { //loops through the array "image" and creates a card for every div in the array.
 	let card= document.createElement('div'); //creates element div
 	card.classList.add('card'); //adds a the class named "card" to the element "card", adding this to the first card
 
@@ -26,28 +26,28 @@ image.forEach(function(img) {
 
 	card.addEventListener('click', function(event) //adds event listener when clicked, something happens
 	{
-		let card = event.target;
+		let card = event.target; //every time you click a card, it assigns the event target
 		card.classList.add('show') //adds the class "show"
-		choose(card);
+		choose(card); //sends the event target to the function
 	});
 	document.body.querySelector('.content').appendChild(card); //adds content to the body of the document
 });
 
-function choose(card) {
-	if(firstchoice == null) {
-		firstchoice = card;
+function choose(card) { //this is the function
+	if(firstchoice == null) { //checks if the user clicked a card
+		firstchoice = card; //assigns the first card to firstchoice
 	}
 	else {
-		if (firstchoice.style.backgroundImage == card.style.backgroundImage) {
-			firstchoice.remove();
+		if (firstchoice.style.backgroundImage == card.style.backgroundImage) { //compares firstchoice to card
+			firstchoice.remove(); //if they match then remove both
 			card.remove();
-			firstchoice = null;
+			firstchoice = null; //then resets the firstchoice
 		}
 		else {
-			setTimeout(()=>{
-				card.classList.remove('show');
+			setTimeout(()=>{ //so the cards dont flip right away
+				card.classList.remove('show'); //remove class for card and firstchoice
 				firstchoice.classList.remove('show');
-				firstchoice = null;
+				firstchoice = null; //resets
 			},500);
 
 		}

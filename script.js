@@ -3,7 +3,6 @@ var firstchoice;
 var secondchoice;
 
 var match = 0;
-var backcard = "back.jpeg";
 
 var image = ['nicolas1.jpg', 'nicolas1.jpg', 'nicolas2.jpg', 'nicolas2.jpg', 'nicolas3.jpg', 'nicolas3.jpg', 'nicolas4.jpg', 'nicolas4.jpg', 'nicolas5.jpg', 'nicolas5.jpg', 'nicolas6.jpg', 'nicolas6.jpg', 'nicolas7.jpg', 'nicolas7.jpg', 'nicolas8.jpg', 'nicolas8.jpg'];
 
@@ -52,9 +51,26 @@ function check() {
 	}
 }
 
+function checkCard(card);
+
+
+
+if(!firstchoice)
+
+
+
+
+
+
+
+
+
 document.getElementById("button").addEventListener("click", function() {
 	location.reload();
 });
+
+
+
 
 image.forEach(function(img) {
 	let card= document.createElement('div'); //creates element div
@@ -64,6 +80,7 @@ image.forEach(function(img) {
 
 	card.addEventListener('click', function(event) //adds event listener when clicked, something happens
 	{
+		let card = event.target;
 		card.classList.add('show') //adds the class "show"
 	});
 	document.body.querySelector('.content').appendChild(card); //adds content to the body of the document

@@ -36,7 +36,7 @@ function choose(card) { //this is the function
 	}
 	else {
 		if (firstchoice.style.backgroundImage == card.style.backgroundImage) { //compares firstchoice to card
-			firstchoice.style.visibility="hidden"; //if they match then remove both
+			firstchoice.style.visibility="hidden"; //if they match, the card still exist, but the visibility is set to hidden.
 			card.style.visibility="hidden";
 			firstchoice = null; //then resets the firstchoice
 		}

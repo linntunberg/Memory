@@ -36,8 +36,8 @@ function choose(card) { //this is the function
 	}
 	else {
 		if (firstchoice.style.backgroundImage == card.style.backgroundImage) { //compares firstchoice to card
-			firstchoice.remove(); //if they match then remove both
-			card.remove();
+			firstchoice.style.visibility="hidden"; //if they match then remove both
+			card.style.visibility="hidden";
 			firstchoice = null; //then resets the firstchoice
 		}
 		else {

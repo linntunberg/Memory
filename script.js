@@ -55,40 +55,6 @@ function choose(card) { //this is the function
 }
 
 
-	// if (clicks == 2) {
-	// 	return;
-	// }
-	// if (clicks == 0) {
-	// 	firstchoice = card;
-	// 	document.images[card].src = image[card];
-	// 	clicks = 1;
-	// } else {
-	// 	clicks = 2;
-	// 	secondchoice = card;
-	// 	document.images[card].src = image[card];
-	// 	timer = setInterval("check()", 1000);
-
-//
-//
-//
-// function check() {
-// 	clearInterval(timer);
-// 	clicks = 0;
-// 	if (image[secondchoice] == image[firstchoice]) {
-// 		match++;
-//
-// 	} else {
-// 		document.images[firstchoice].src = backcard;
-// 		document.images[secondchoice].src = backcard;
-// 		return;
-// 	}
-//
-
-
-
-
-
-
 document.getElementById("button").addEventListener("click", function() {
 	location.reload();
 });
